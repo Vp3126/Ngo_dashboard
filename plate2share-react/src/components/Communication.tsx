@@ -189,7 +189,7 @@ const Communication = () => {
       const contactMessages = prevMessages[selectedContact.id] || [];
       return {
         ...prevMessages,
-        [selectedContact.id]: [newMessage, ...contactMessages]
+        [selectedContact.id]: [...contactMessages, newMessage]
       };
     });
     
@@ -349,7 +349,7 @@ const Communication = () => {
             </div>
             
             {/* Messages */}
-            <div className="flex-grow overflow-y-auto p-4 flex flex-col-reverse">
+            <div className="flex-grow overflow-y-auto p-4 flex flex-col">
               <div className="flex flex-col space-y-3">
                 {messages[selectedContact.id]?.map(message => (
                   <div 

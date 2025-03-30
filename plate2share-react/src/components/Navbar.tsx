@@ -13,7 +13,6 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode }) => {
   const navigationLinks = [
     { name: 'Dashboard', path: '/dashboard', icon: '📊' },
     { name: 'Add Food', path: '/add-food', icon: '🍲' },
-    { name: 'Food Listing', path: '/food-listing', icon: '🍽️' },
     { name: 'My Donations', path: '/my-donations', icon: '💝' },
     { name: 'Communication', path: '/communication', icon: '💬' },
     { name: 'Notifications', path: '/notifications', icon: '🔔' },
